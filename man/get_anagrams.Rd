@@ -15,7 +15,7 @@ get_anagrams(word, dictionary = "scrabble")
 This function returns all possible words within a word, scrabble style
 }
 \examples{
-perms <- get_anagrams("perms")
+perms <- get_anagrams(word = "perms")
 length(perms)
 perms
 }

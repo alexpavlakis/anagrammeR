@@ -5,7 +5,7 @@
 #' @keywords combinations
 #' @export
 #' @examples
-#' perms <- get_combos("perms")
+#' perms <- get_combos(word = "perms")
 #' length(perms)
 #' perms
 
@@ -20,5 +20,3 @@ get_combos <- function(word) {
   }
   combos
 }
-
-get_combos(word)

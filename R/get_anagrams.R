@@ -6,7 +6,7 @@
 #' @keywords anagrams
 #' @export
 #' @examples
-#' perms <- get_anagrams("perms")
+#' perms <- get_anagrams(word = "perms")
 #' length(perms)
 #' perms
 
@@ -40,5 +40,3 @@ get_anagrams <- function(word,
   }
   all_words
 }
-
-

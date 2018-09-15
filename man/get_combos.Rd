@@ -13,7 +13,7 @@ get_combos(word)
 This function obtains all possible letter combinations within a word
 }
 \examples{
-perms <- get_combos("perms")
+perms <- get_combos(word = "perms")
 length(perms)
 perms
 }
