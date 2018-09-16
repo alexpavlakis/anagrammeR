@@ -1,10 +1,10 @@
 Package: anagrammeR
 Type: Package
-Title: Scrabble-style subwords.
+Title: Scrabble-Style Subwords
 Version: 0.1.0
 Author: Alex Pavlakis
 Maintainer: Alex Pavlakis <alexpavlakis@gmail.com>
-Description: This package contains a suite of functions for generating anagrams and sub words, including an implementation of Heap’s algorithm for word permutations, all in base R.
+Description: Contains a suite of functions for generating anagrams and sub words, including an implementation of Heap’s algorithm for word permutations, all in base R.
 License: NA
 Encoding: UTF-8
 LazyData: true
