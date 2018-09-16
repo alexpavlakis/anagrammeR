@@ -36,7 +36,7 @@ get_anagrams <- function(word,
   all_words <- list()
   for(i in 1:length(permutations)) {
     perms <- unlist(permutations[[i]])
-    all_words[[i]] <- unique(perms[perms %in% words])
+    all_words[[i]] <- unique(perms[perms %in% dictionary])
   }
   all_words
 }
