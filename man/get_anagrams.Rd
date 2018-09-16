@@ -4,7 +4,7 @@
 \alias{get_anagrams}
 \title{anagram function}
 \usage{
-get_anagrams(word, dictionary = "scrabble")
+get_anagrams(word, dictionary = scrabble)
 }
 \arguments{
 \item{word}{a word (or vector of length one with multiple characters/digits)}
@@ -15,7 +15,8 @@ get_anagrams(word, dictionary = "scrabble")
 This function returns all possible words within a word, scrabble style
 }
 \examples{
-perms <- get_anagrams(word = "perms")
+data(scrabble)
+perms <- get_anagrams(word = "perms", dictionary = scrabble)
 length(perms)
 perms
 }

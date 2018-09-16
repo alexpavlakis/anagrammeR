@@ -6,17 +6,13 @@
 #' @keywords anagrams
 #' @export
 #' @examples
-#' perms <- get_anagrams(word = "perms")
+#' data(scrabble)
+#' perms <- get_anagrams(word = "perms", dictionary = scrabble)
 #' length(perms)
 #' perms
 
 get_anagrams <- function(word,
-                         dictionary = "scrabble") {
-  if(dictionary == "scrabble" || is.null(dictionary)) {
-    dictionary <- scrabble
-  } else {
-    dictionary <- words
-  }
+                         dictionary = scrabble) {
   # Get all possible letter combinations
   combos <- get_combos(word)
   # Get all permutations of each combination
@@ -40,3 +36,5 @@ get_anagrams <- function(word,
   }
   all_words
 }
+
+utils::globalVariables(names = "scrabble", package = "anagrammeR")
